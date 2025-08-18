@@ -20,7 +20,7 @@
             </li>
           
             <li>
-                <a href="">About Us</a>
+                <a href="{{ route('vehicle_list')}}">Vehicles</a>
             </li>
             <li>
                 <a href="">contact</a>
