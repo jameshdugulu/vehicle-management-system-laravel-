@@ -43,7 +43,7 @@ class vehicleController extends Controller
         return redirect()->route('vehicle_form')->with('message', `Vehicle added successfully! $vehicleName`); 
     }
 
-    public function vehicle_list(){
+     public function vehicle_list(){
         $vehicles = vehicle::all();
         return view('vehicle.all_vehicle', ['vehicles' => $vehicles ]);
     }
@@ -84,5 +84,9 @@ class vehicleController extends Controller
         return redirect()->route('vehicle_list')->with('message', 'Vehicle updated successfully!');
     }
 
+    public function vehicle_details($id){
+        $vehicle = vehicle::findOrFail($id);
+        return view('vehicle.vehicle_details', ['vehicle' => $vehicle ]);
+    }
 
 }

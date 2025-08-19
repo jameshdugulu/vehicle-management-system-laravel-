@@ -18,3 +18,5 @@ Route::get('/delete_vehicle/{id}', [vehicleController::class, 'delete_vehicle'])
 Route::get('/edit_page/{id}', [vehicleController::class, 'edit_page'])->name('edit_page');
 
 Route::post('/update_vehicle/{id}', [vehicleController::class, 'update_vehicle'])->name('update_vehicle');
+
+Route::get('/vehicle_details/{id}', [vehicleController::class, 'vehicle_details'])->name('vehicle_details');

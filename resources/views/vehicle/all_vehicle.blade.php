@@ -6,7 +6,7 @@
   <h1>All vehicles <button class="addBtnVehicle" onclick=" window.location='{{ route('vehicle_form')}}' "> <div class="addIcon">+</div> Add vehicle</button></h1>  
   <div class="vehicle-grid">
     @foreach ($vehicles as $vehicle)
-      <div class="vehicle-card">
+      <div class="vehicle-card" onclick=" window.location='{{ route('vehicle_details', $vehicle->id) }}'">
         <img src="{{ asset('images/'. $vehicle->image)}}" alt="{{ $vehicle->vehicleName}}">
          <h2>{{ $vehicle->vehicleName}}</h2>
          <p>price : <span>{{ $vehicle->vehiclePrice}}R₣ </span></p>
