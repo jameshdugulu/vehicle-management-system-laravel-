@@ -20,8 +20,12 @@
                 <label for="vehiclePrice">Vehicle Price:</label>
                 <input type="number" id="vehiclePrice" name="vehiclePrice" >
              </div>
+                <div>
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description"></textarea>
 
-             <div>
+                <div>
+
                  <input type="file" id="productImage" name="image">
              </div>
            

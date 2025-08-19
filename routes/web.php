@@ -20,3 +20,5 @@ Route::get('/edit_page/{id}', [vehicleController::class, 'edit_page'])->name('ed
 Route::post('/update_vehicle/{id}', [vehicleController::class, 'update_vehicle'])->name('update_vehicle');
 
 Route::get('/vehicle_details/{id}', [vehicleController::class, 'vehicle_details'])->name('vehicle_details');
+
+Route::get('/search_vehicle', [vehicleController::class, 'search_vehicle'])->name('search_vehicle');

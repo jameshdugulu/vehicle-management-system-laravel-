@@ -11,6 +11,7 @@ class vehicle extends Model
         'vehicleName',
         'vehiclePrice',
         'modelNumber',
+        'description',
         'image',
     ];
 }

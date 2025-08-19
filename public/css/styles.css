@@ -118,6 +118,11 @@ nav .menu li {
   padding: 10px;
   z-index: 1;
 }
+.searchDiv {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 20px;
+}
 .addBtnVehicle{
   background-color: white;
   display: inline-flex;

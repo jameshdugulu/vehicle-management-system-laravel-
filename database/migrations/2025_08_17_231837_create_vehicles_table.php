@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('vehicleName');
             $table->decimal('vehiclePrice')->nullable();
             $table->string('modelNumber')->nullable();
+            $table->text('description')->nullable();
             $table->text('image')->nullable();
 
             $table->timestamps();

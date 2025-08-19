@@ -20,20 +20,8 @@
             </li>
           
             <li>
-                <a href="{{ route('vehicle_list')}}">Vehicles</a>
+                <a href="{{ route('vehicle_list')}}">Management_vehicles</a>
             </li>
-            <li>
-                <a href="">contact</a>
-            </li>
-            
-            <li>
-                <a href="">all_products</a>
-            </li>
-            <li>
-                <a href="">login</a>
-            </li>
-           
-
         </ul>
        
 

@@ -21,6 +21,7 @@ class vehicleController extends Controller
             'vehicleName' => 'required|string',
             'vehiclePrice' => 'required|integer',
             'modelNumber' => 'required|string',
+            'description' => 'nullable|string',
             'image' => 'nullable',
         ]);
 
@@ -88,5 +89,6 @@ class vehicleController extends Controller
         $vehicle = vehicle::findOrFail($id);
         return view('vehicle.vehicle_details', ['vehicle' => $vehicle ]);
     }
+    
 
 }
